@@ -5769,25 +5769,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dvasauskas\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\vanuh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dvasauskas\\Desktop\\Software Projects\\Visual Studio\\CS220-Group\\TimesheetLaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup.csproj",
+      "projectUniqueName": "C:\\Users\\vanuh\\CS220-LaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup.csproj",
       "projectName": "TimesheetLaikasGroup",
-      "projectPath": "C:\\Users\\dvasauskas\\Desktop\\Software Projects\\Visual Studio\\CS220-Group\\TimesheetLaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup.csproj",
-      "packagesPath": "C:\\Users\\dvasauskas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dvasauskas\\Desktop\\Software Projects\\Visual Studio\\CS220-Group\\TimesheetLaikasGroup\\TimesheetLaikasGroup\\obj\\",
+      "projectPath": "C:\\Users\\vanuh\\CS220-LaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup.csproj",
+      "packagesPath": "C:\\Users\\vanuh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vanuh\\CS220-LaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\dvasauskas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\vanuh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5853,7 +5848,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

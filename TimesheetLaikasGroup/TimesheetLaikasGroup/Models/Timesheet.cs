@@ -8,10 +8,10 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace TimesheetLaikasGroup.Models
 {
 
-    public class Timesheet
+    public class Timesheet : EntityBase
     {
         public DateTime ClockIn { get; set; }
-        public DateTime CLockOut { get; set; }
+        public DateTime ClockOut { get; set; }
         public string Status { get; set; }
         public string UserID { get; set; }
 
