@@ -13,10 +13,15 @@ namespace TimesheetLaikasGroup.Models.ViewModels
 
         public DateTime ClockOut { get; set; }
 
+        public string Status { get; set; }
+
         public string UserID { get; set; }
 
         [ForeignKey(nameof(UserID))]
         public User User { get; set; }
+
+        [NotMapped]
+        public List<SelectListItem> Statuses { get; set; }
 
         public string TotalWorkTime { get; set; }
     }

@@ -19,11 +19,8 @@ namespace TimesheetLaikasGroup.Models
         public User User { get; set; }
 
         [NotMapped]
-        public List<SelectListItem> Statuses { get; } = new List<SelectListItem>
-       {
-            new SelectListItem {Value = "Approved", Text = "Approved" },
-            new SelectListItem {Value = "Rejected", Text = "Rejected" }
-       };
+        public List<SelectListItem> Statuses { get; set; }
+
 
         public string TotalWorkTime { get; set; }
 
