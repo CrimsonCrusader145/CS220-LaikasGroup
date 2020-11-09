@@ -21,7 +21,7 @@ namespace TimesheetLaikasGroup.Models.ViewModels
 
         [PersonalData]
         [DisplayName("Phone Number")]
-        public String USR_PHONE { get; set; }
+        public String EMP_PHONE { get; set; }
 
         [Display(Name = "Confirm Password")]
         [Compare("Password", ErrorMessage = "The new password and confirmation password do not match.")]
@@ -30,6 +30,10 @@ namespace TimesheetLaikasGroup.Models.ViewModels
 
         [PersonalData]
         [DisplayName("First Name")]
-        public string USR_FNAME { get; set; }
+        public string EMP_FNAME { get; set; }
+
+        [PersonalData]
+        [DisplayName("Last Name")]
+        public string EMP_LNAME { get; set; }
     }
 }

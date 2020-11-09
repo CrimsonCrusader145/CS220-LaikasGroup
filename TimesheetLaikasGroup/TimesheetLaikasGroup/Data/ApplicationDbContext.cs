@@ -13,6 +13,9 @@ namespace TimesheetLaikasGroup.Data
             : base(options)
         {
         }
+        public ApplicationDbContext()
+        {
+        }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Division> Divisions { get; set; }
         public DbSet<Timesheet> Timesheets { get; set; }
