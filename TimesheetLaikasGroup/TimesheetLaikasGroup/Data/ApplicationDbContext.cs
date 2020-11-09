@@ -29,6 +29,6 @@ namespace TimesheetLaikasGroup.Data
         }
 
         public DbSet<TimesheetLaikasGroup.Models.Timesheet> Timesheet { get; set; }
-        public DbSet<TimesheetLaikasGroup.Models.User> User { get; set; }
+        public DbSet<TimesheetLaikasGroup.Models.Employee> Employee { get; set; }
     }
 }

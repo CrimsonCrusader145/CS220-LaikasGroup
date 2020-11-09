@@ -13,13 +13,12 @@ using TimesheetLaikasGroup.Models.ViewModels;
 
 namespace TimesheetLaikasGroup.Controllers
 {
-    [Authorize]
     public class TimesheetController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private readonly UserManager<User> _userManager;
+        private readonly UserManager<Employee> _userManager;
 
-        public TimesheetController(ApplicationDbContext context, UserManager<User> userManager)
+        public TimesheetController(ApplicationDbContext context, UserManager<Employee> userManager)
         {
             _userManager = userManager;
             _context = context;
@@ -28,21 +27,16 @@ namespace TimesheetLaikasGroup.Controllers
         {
             ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
             ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
-            ViewData["StatusFilter"] = statusString;
-            var db = _context.Timesheet.Include(t => t.User);
+            var db = _context.Timesheet.Include(t => t.Employee);
 
             var timesheets = from t in _context.Timesheet
                              select t;
 
-            if (!String.IsNullOrEmpty(statusString))
-            {
-                timesheets = timesheets.Where(t => t.Status.Contains(statusString));
-            }
-
+            
             switch (sortOrder)
             {
                 case "name_desc":
-                    timesheets = timesheets.OrderByDescending(t => t.User.UserName);
+                    timesheets = timesheets.OrderByDescending(t => t.Employee.EMP_LNAME);
                     break;
 
                 case "Date":
@@ -66,7 +60,7 @@ namespace TimesheetLaikasGroup.Controllers
             }
 
             var timesheet = await _context.Timesheet
-                .Include(t => t.User)
+                .Include(t => t.Employee)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (timesheet == null)
             {
@@ -78,6 +72,7 @@ namespace TimesheetLaikasGroup.Controllers
 
         public IActionResult Create()
         {
+            ViewData["EMP_ID"] = new SelectList(_context.Employee, "Id", "EMP_LNAME");
             return View();
         }
 
@@ -97,9 +92,8 @@ namespace TimesheetLaikasGroup.Controllers
                 timesheet.ClockIn = model.ClockIn;
                 timesheet.ClockOut = model.ClockOut;
                 timesheet.Status = "Pending";
-                timesheet.UserID = currentUser.Id;
-                timesheet.TotalWorkTime = string.Format("{0:0}:{1:00}", difference.TotalHours, difference.Minutes); //To Do: Need to see how to format minutes
-
+                timesheet.EMP_ID = currentUser.Id;
+                timesheet.TotalWorkTime = string.Format("{0:0}:{1:00}", difference.TotalHours, difference.Minutes); 
                 _context.Add(timesheet);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -118,15 +112,11 @@ namespace TimesheetLaikasGroup.Controllers
             }
 
             var timesheet = await _context.Timesheet.FindAsync(id);
-            timesheet.Statuses = new List<SelectListItem>
-                {
-                    new SelectListItem {Value = "Approved", Text = "Approved" },
-                    new SelectListItem {Value = "Rejected", Text = "Rejected" }
-                };
+            
             if (id != null)
             {
                 model.Status = timesheet.Status;
-                model.UserID = timesheet.UserID;
+                model.EMP_ID = timesheet.EMP_ID;
                 model.ClockIn = timesheet.ClockIn;
                 model.ClockOut = timesheet.ClockOut;
                 model.TotalWorkTime = timesheet.TotalWorkTime;
@@ -135,7 +125,7 @@ namespace TimesheetLaikasGroup.Controllers
             {
                 return NotFound();
             }
-            ViewData["UserID"] = new SelectList(_context.User, "Id", "Id", timesheet.UserID);
+            ViewData["EMP_ID"] = new SelectList(_context.Employee, "Id", "Id", timesheet.EMP_ID);
             return View(timesheet);
         }
 
@@ -152,7 +142,7 @@ namespace TimesheetLaikasGroup.Controllers
                     timesheetEdit.Status = timesheet.Status;
                     timesheetEdit.ClockIn = timesheet.ClockIn;
                     timesheetEdit.ClockOut = timesheet.ClockOut;
-                    timesheetEdit.UserID = timesheet.UserID;
+                    timesheetEdit.EMP_ID = timesheet.EMP_ID;
                     timesheetEdit.TotalWorkTime = string.Format("{0:0}:{1:00}", (int)timesheet.ClockOut.Subtract(timesheet.ClockIn).TotalHours, timesheet.ClockOut.Subtract(timesheet.ClockIn).Minutes);
                     timesheetEdit.TotalWorkTime = timesheet.TotalWorkTime;
                 }
@@ -163,7 +153,7 @@ namespace TimesheetLaikasGroup.Controllers
 
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserID"] = new SelectList(_context.User, "Id", "Id", timesheet.UserID);
+            ViewData["EMP_ID"] = new SelectList(_context.Employee, "Id", "Id", timesheet.EMP_ID);
 
             return View(timesheet);
         }
@@ -176,7 +166,7 @@ namespace TimesheetLaikasGroup.Controllers
             }
 
             var timesheet = await _context.Timesheet
-                .Include(t => t.User)
+                .Include(t => t.Employee)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (timesheet == null)
             {

@@ -1,8 +1,25 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@using Microsoft.AspNetCore.Identity
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@{
+    ViewData["Title"] = "Laikas Group Time Application";
+}
+@inject SignInManager<Employee> SignInManager
+@inject UserManager<Employee> UserManager
+<body>
+
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <h3><center style="color:black">Laikas Group Timesheet Application, you are logged in as @UserManager.GetUserName(User)</h3>
+
+
+    }
+
+
+
+    else
+    {
+        <h3><center>Laikas Group Timesheet Application!</h3>
+
+    }
+
+</body>
