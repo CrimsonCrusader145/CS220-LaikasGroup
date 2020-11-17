@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -12,10 +13,10 @@ namespace TimesheetLaikasGroup.Models
     {
         public DateTime ClockIn { get; set; }
         public DateTime ClockOut { get; set; }
-        public string Status { get; set; }
-        public string EMP_ID { get; set; }
+        
+        public string EmpID { get; set; }
 
-        [ForeignKey(nameof(EMP_ID))]
+        [ForeignKey(nameof(EmpID))]
         public Employee Employee { get; set; }
 
         [NotMapped]
@@ -25,4 +26,5 @@ namespace TimesheetLaikasGroup.Models
         public string TotalWorkTime { get; set; }
 
     }
+    
 }
