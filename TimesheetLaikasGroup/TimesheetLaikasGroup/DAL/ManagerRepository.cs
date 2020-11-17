@@ -19,23 +19,23 @@ namespace TimesheetLaikasGroup.DAL
 
         public IEnumerable<Manager> GetManagers()
         {
-            return context.Managers.ToList();
+            return context.Manager.ToList();
         }
 
         public Manager GetManagerByID(int id)
         {
-            return context.Managers.Find(id);
+            return context.Manager.Find(id);
         }
 
         public void InsertManager(Manager manager)
         {
-            context.Managers.Add(manager);
+            context.Manager.Add(manager);
         }
 
         public void DeleteManager(int managerID)
         {
-            Manager manager = context.Managers.Find(managerID);
-            context.Managers.Remove(manager);
+            Manager manager = context.Manager.Find(managerID);
+            context.Manager.Remove(manager);
         }
 
         public void UpdateManager(Manager manager)

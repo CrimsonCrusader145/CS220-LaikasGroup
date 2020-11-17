@@ -19,23 +19,23 @@ namespace TimesheetLaikasGroup.DAL
 
         public IEnumerable<Timesheet> GetTimesheets()
         {
-            return context.Timesheets.ToList();
+            return context.Timesheet.ToList();
         }
 
         public Timesheet GetTimesheetByID(int id)
         {
-            return context.Timesheets.Find(id);
+            return context.Timesheet.Find(id);
         }
 
         public void InsertTimesheet(Timesheet timesheet)
         {
-            context.Timesheets.Add(timesheet);
+            context.Timesheet.Add(timesheet);
         }
 
         public void DeleteTimesheet(int timesheetID)
         {
-            Timesheet timesheet = context.Timesheets.Find(timesheetID);
-            context.Timesheets.Remove(timesheet);
+            Timesheet timesheet = context.Timesheet.Find(timesheetID);
+            context.Timesheet.Remove(timesheet);
         }
 
         public void UpdateTimesheet(Timesheet timesheet)

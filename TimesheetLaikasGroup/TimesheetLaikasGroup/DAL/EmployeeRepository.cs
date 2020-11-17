@@ -19,23 +19,23 @@ namespace TimesheetLaikasGroup.DAL
 
         public IEnumerable<Employee> GetEmployees()
         {
-            return context.Employees.ToList();
+            return context.Employee.ToList();
         }
 
         public Employee GetEmployeeByID(int id)
         {
-            return context.Employees.Find(id);
+            return context.Employee.Find(id);
         }
 
         public void InsertEmployee(Employee employee)
         {
-            context.Employees.Add(employee);
+            context.Employee.Add(employee);
         }
 
         public void DeleteEmployee(int employeeID)
         {
-            Employee employee = context.Employees.Find(employeeID);
-            context.Employees.Remove(employee);
+            Employee employee = context.Employee.Find(employeeID);
+            context.Employee.Remove(employee);
         }
 
         public void UpdateEmployee(Employee employee)

@@ -19,23 +19,23 @@ namespace TimesheetLaikasGroup.DAL
 
         public IEnumerable<PayrollSupervisor> GetPayrollSupervisors()
         {
-            return context.PayrollSupervisors.ToList();
+            return context.PayrollSupervisor.ToList();
         }
 
         public PayrollSupervisor GetPayrollSupervisorByID(int id)
         {
-            return context.PayrollSupervisors.Find(id);
+            return context.PayrollSupervisor.Find(id);
         }
 
         public void InsertPayrollSupervisor(PayrollSupervisor payrollSupervisor)
         {
-            context.PayrollSupervisors.Add(payrollSupervisor);
+            context.PayrollSupervisor.Add(payrollSupervisor);
         }
 
         public void DeletePayrollSupervisor(int payrollSupervisorID)
         {
-            PayrollSupervisor payrollSupervisor = context.PayrollSupervisors.Find(payrollSupervisorID);
-            context.PayrollSupervisors.Remove(payrollSupervisor);
+            PayrollSupervisor payrollSupervisor = context.PayrollSupervisor.Find(payrollSupervisorID);
+            context.PayrollSupervisor.Remove(payrollSupervisor);
         }
 
         public void UpdatePayrollSupervisor(PayrollSupervisor payrollSupervisor)
