@@ -37,8 +37,8 @@ namespace TimesheetLaikasGroup.Models
     public class RoleEdit
     {
         public Roles Role { get; set; }
-        public IEnumerable<User> Members { get; set; }
-        public IEnumerable<User> NonMembers { get; set; }
+        public IEnumerable<Employee> Members { get; set; }
+        public IEnumerable<Employee> NonMembers { get; set; }
     }
 
     public class RoleModification

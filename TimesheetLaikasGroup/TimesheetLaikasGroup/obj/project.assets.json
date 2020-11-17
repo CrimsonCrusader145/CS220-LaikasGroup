@@ -5769,20 +5769,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\crusa\\.nuget\\packages\\": {}
+    "C:\\Users\\dvasauskas\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\crusa\\IdeaProjects\\Lesson 3\\CS220-LaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup.csproj",
+      "projectUniqueName": "C:\\Users\\dvasauskas\\Desktop\\Software Projects\\Visual Studio\\CS220-Group\\CS220-LaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup.csproj",
       "projectName": "TimesheetLaikasGroup",
-      "projectPath": "C:\\Users\\crusa\\IdeaProjects\\Lesson 3\\CS220-LaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup.csproj",
-      "packagesPath": "C:\\Users\\crusa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\crusa\\IdeaProjects\\Lesson 3\\CS220-LaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup\\obj\\",
+      "projectPath": "C:\\Users\\dvasauskas\\Desktop\\Software Projects\\Visual Studio\\CS220-Group\\CS220-LaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup.csproj",
+      "packagesPath": "C:\\Users\\dvasauskas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dvasauskas\\Desktop\\Software Projects\\Visual Studio\\CS220-Group\\CS220-LaikasGroup\\TimesheetLaikasGroup\\TimesheetLaikasGroup\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\crusa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\dvasauskas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5793,7 +5798,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -5805,7 +5809,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
             "target": "Package",
@@ -5850,7 +5853,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

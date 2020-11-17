@@ -113,3 +113,13 @@ C:\Users\vanuh\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\D
 C:\Users\vanuh\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.dll
 C:\Users\vanuh\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.pdb
 C:\Users\vanuh\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.genruntimeconfig.cache
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.csprojAssemblyReference.cache
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.AssemblyInfoInputs.cache
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.AssemblyInfo.cs
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.csproj.CoreCompileInputs.cache
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.RazorAssemblyInfo.cache
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.RazorAssemblyInfo.cs
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.dll
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.pdb

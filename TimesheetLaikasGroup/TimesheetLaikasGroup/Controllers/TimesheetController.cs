@@ -91,8 +91,8 @@ namespace TimesheetLaikasGroup.Controllers
 
                 timesheet.ClockIn = model.ClockIn;
                 timesheet.ClockOut = model.ClockOut;
-                timesheet.Status = "Pending";
-                timesheet.EMP_ID = currentUser.Id;
+                
+                timesheet.EmpID = currentUser.Id;
                 timesheet.TotalWorkTime = string.Format("{0:0}:{1:00}", difference.TotalHours, difference.Minutes); 
                 _context.Add(timesheet);
                 await _context.SaveChangesAsync();
@@ -115,8 +115,8 @@ namespace TimesheetLaikasGroup.Controllers
             
             if (id != null)
             {
-                model.Status = timesheet.Status;
-                model.EMP_ID = timesheet.EMP_ID;
+                
+                model.EMP_ID = timesheet.EmpID;
                 model.ClockIn = timesheet.ClockIn;
                 model.ClockOut = timesheet.ClockOut;
                 model.TotalWorkTime = timesheet.TotalWorkTime;
@@ -125,7 +125,7 @@ namespace TimesheetLaikasGroup.Controllers
             {
                 return NotFound();
             }
-            ViewData["EMP_ID"] = new SelectList(_context.Employee, "Id", "Id", timesheet.EMP_ID);
+            ViewData["EMP_ID"] = new SelectList(_context.Employee, "Id", "Id", timesheet.EmpID);
             return View(timesheet);
         }
 
@@ -139,10 +139,10 @@ namespace TimesheetLaikasGroup.Controllers
 
                 if (timesheetEdit != null)
                 {
-                    timesheetEdit.Status = timesheet.Status;
+                    
                     timesheetEdit.ClockIn = timesheet.ClockIn;
                     timesheetEdit.ClockOut = timesheet.ClockOut;
-                    timesheetEdit.EMP_ID = timesheet.EMP_ID;
+                    timesheetEdit.EmpID = timesheet.EMP_ID;
                     timesheetEdit.TotalWorkTime = string.Format("{0:0}:{1:00}", (int)timesheet.ClockOut.Subtract(timesheet.ClockIn).TotalHours, timesheet.ClockOut.Subtract(timesheet.ClockIn).Minutes);
                     timesheetEdit.TotalWorkTime = timesheet.TotalWorkTime;
                 }
@@ -189,6 +189,64 @@ namespace TimesheetLaikasGroup.Controllers
         private bool TimesheetExists(int id)
         {
             return _context.Timesheet.Any(e => e.Id == id);
+        }
+
+        public IActionResult TimePunch()
+        {
+            //ViewData["EmpID"] = new SelectList(_context.Employee, "Id", "Id");
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CLockIn(TimesheetViewModel model)
+        {
+            var currentUser = await _userManager.GetUserAsync(HttpContext.User);
+
+            if (ModelState.IsValid)
+            {
+                Timesheet timesheet = new Timesheet();
+
+                timesheet.ClockIn = DateTime.Now;
+                timesheet.EmpID = currentUser.Id;
+
+                //decimal totalTime = Decimal.Parse(timesheet.TotalWorkTime);
+
+                _context.Add(timesheet);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            //ViewData["EmpID"] = new SelectList(_context.Employee, "Id", "Id", timesheet.EmpID);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ClockOut(Timesheet timesheet)
+        {
+            var currentUser = await _userManager.GetUserAsync(HttpContext.User);
+
+            if (ModelState.IsValid)
+            {
+                timesheet = this._context.Timesheet
+                                .Where(c => c.EmpID == currentUser.Id)
+                                .OrderByDescending(t => t.ClockIn)
+                                .FirstOrDefault();
+
+                //Timesheet timesheet = new Timesheet();
+                // var timesheet1 = timesheet.PunchOut;
+
+                timesheet.ClockOut = DateTime.Now;
+
+                _context.Update(timesheet);
+
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(timesheet);
         }
     }
 }

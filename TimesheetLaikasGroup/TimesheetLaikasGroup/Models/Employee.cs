@@ -16,7 +16,6 @@ namespace TimesheetLaikasGroup.Models
 
         public Employee() : base() { }
        
-        public int DIV_ID { get; set; }
 
         [PersonalData]
         [DisplayName("First Name")]
