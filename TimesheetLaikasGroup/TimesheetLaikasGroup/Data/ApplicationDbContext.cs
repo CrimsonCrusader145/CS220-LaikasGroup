@@ -19,8 +19,8 @@ namespace TimesheetLaikasGroup.Data
         public DbSet<Employee> Employee { get; set; }
         public DbSet<Division> Divisions { get; set; }
         public DbSet<Timesheet> Timesheet { get; set; }
-        public DbSet<Manager> Managers { get; set; }
-        public DbSet<PayrollSupervisor> PayrollSupervisors { get; set; }
+        public DbSet<Manager> Manager { get; set; }
+        public DbSet<PayrollSupervisor> PayrollSupervisor { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

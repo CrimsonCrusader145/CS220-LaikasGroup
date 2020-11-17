@@ -12,19 +12,19 @@ namespace TimesheetLaikasGroup.Data
             context.Database.EnsureCreated();
 
             // Look for any employees.
-            if (context.Employees.Any())
+            if (context.Employee.Any())
             {
                 return;   // DB has been seeded
             }
 
             var employees = new Employee[]
             {
-            new Employee{FirstName="Carson",LastName="Alexander",Wage=8.75},
+            new Employee{EMP_FNAME="Carson",EMP_LNAME="Alexander",Wage=8.75},
 
             };
             foreach (Employee e in employees)
             {
-                context.Employees.Add(e);
+                context.Employee.Add(e);
             }
             context.SaveChanges();
 
@@ -41,24 +41,11 @@ namespace TimesheetLaikasGroup.Data
 
             var Timesheets = new Timesheet[]
             {
-            new Timesheet{StudentID=1,CourseID=1050,Grade=Grade.A},
-            new Enrollment{StudentID=1,CourseID=4022,Grade=Grade.C},
-            new Enrollment{StudentID=1,CourseID=4041,Grade=Grade.B},
-            new Enrollment{StudentID=2,CourseID=1045,Grade=Grade.B},
-            new Enrollment{StudentID=2,CourseID=3141,Grade=Grade.F},
-            new Enrollment{StudentID=2,CourseID=2021,Grade=Grade.F},
-            new Enrollment{StudentID=3,CourseID=1050},
-            new Enrollment{StudentID=4,CourseID=1050},
-            new Enrollment{StudentID=4,CourseID=4022,Grade=Grade.F},
-            new Enrollment{StudentID=5,CourseID=4041,Grade=Grade.C},
-            new Enrollment{StudentID=6,CourseID=1045},
-            new Enrollment{StudentID=7,CourseID=3141,Grade=Grade.A},
+
             };
-            foreach (Enrollment e in enrollments)
-            {
-                context.Enrollments.Add(e);
-            }
-            context.SaveChanges();
+
         }
+        //context.SaveChanges();
     }
+}
 }

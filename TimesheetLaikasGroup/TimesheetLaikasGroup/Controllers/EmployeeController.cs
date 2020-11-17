@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 using TimesheetLaikasGroup.DAL;
 using TimesheetLaikasGroup.Models;
 
+
 namespace TimesheetLaikasGroup.Controllers
 {
-    public class EmployeeController
+    public class EmployeeController : Controller
     {
         IEmployeeRepository employeeRepo = null;
         public EmployeeController(IEmployeeRepository empRepo)
@@ -23,10 +24,11 @@ namespace TimesheetLaikasGroup.Controllers
                 if (string.IsNullOrEmpty(employee.Id.ToString()))
                 {
                     employeeRepo.InsertEmployee(employee);
+                    employeeRepo.Save();
                 }
                 else
                 {
-                    employee = employeeRepo.UpdateEmployee(employee);
+                   // employee = employeeRepo.UpdateEmployee(employee);
                 }
             }
             return View("Create");
