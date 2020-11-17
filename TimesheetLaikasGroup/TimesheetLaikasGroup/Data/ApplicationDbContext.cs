@@ -13,9 +13,7 @@ namespace TimesheetLaikasGroup.Data
             : base(options)
         {
         }
-        public ApplicationDbContext()
-        {
-        }
+
         public DbSet<Employee> Employee { get; set; }
         public DbSet<Division> Divisions { get; set; }
         public DbSet<Timesheet> Timesheet { get; set; }
@@ -31,7 +29,7 @@ namespace TimesheetLaikasGroup.Data
             modelBuilder.Entity<PayrollSupervisor>().ToTable("PayrollSupervisor");
         }
 
-       // public DbSet<TimesheetLaikasGroup.Models.Timesheet> Timesheet { get; set; }
-       // public DbSet<TimesheetLaikasGroup.Models.Employee> Employee { get; set; }
+        // public DbSet<TimesheetLaikasGroup.Models.Timesheet> Timesheet { get; set; }
+        // public DbSet<TimesheetLaikasGroup.Models.Employee> Employee { get; set; }
     }
 }
