@@ -116,9 +116,6 @@ C:\Users\vanuh\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\D
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.csprojAssemblyReference.cache
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.AssemblyInfoInputs.cache
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.AssemblyInfo.cs
-C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.csproj.CoreCompileInputs.cache
-C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.RazorAssemblyInfo.cache
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.RazorAssemblyInfo.cs
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.dll
@@ -144,8 +141,6 @@ C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-La
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
-C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -154,9 +149,6 @@ C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-La
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
@@ -207,3 +199,9 @@ C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-La
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\staticwebassets\TimesheetLaikasGroup.StaticWebAssets.Manifest.cache
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\staticwebassets\TimesheetLaikasGroup.StaticWebAssets.xml
 C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.genruntimeconfig.cache
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.csproj.CoreCompileInputs.cache
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\dvasauskas\Desktop\Software Projects\Visual Studio\CS220-Group\CS220-LaikasGroup\TimesheetLaikasGroup\TimesheetLaikasGroup\obj\Debug\netcoreapp3.1\TimesheetLaikasGroup.MvcApplicationPartsAssemblyInfo.cache
